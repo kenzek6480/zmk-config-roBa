@@ -83,6 +83,12 @@
             key-positions = <6 18>;
             layers = <5>;
         };
+
+        C_INSERT {
+            bindings = <&M_INSERT>;
+            key-positions = <7 19>;
+            layers = <5>;
+        };
     };
 
     macros {
