@@ -10,6 +10,7 @@
 
 &trackball {
     //automouse-layer = <4>;
+
     scroll-layers = <5>;
 
     // arrows {
@@ -72,6 +73,8 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
             label = "( )";
+            wait-ms = <15>;
+            tap-ms = <15>;
         };
 
         M_BRC: M_BRC {
@@ -79,6 +82,8 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
             label = "{ }";
+            wait-ms = <15>;
+            tap-ms = <15>;
         };
 
         M_BCT: M_BCT {
@@ -86,6 +91,8 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
             label = "[ ]";
+            wait-ms = <15>;
+            tap-ms = <15>;
         };
     };
 
@@ -139,10 +146,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans          &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans          &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                &trans
             >;
         };
 
