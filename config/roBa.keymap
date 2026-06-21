@@ -60,12 +60,12 @@
             >;
         };
 
-        FUNCTION {
+        MARKS {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp QUESTION   &kp DOUBLE_QUOTES  &kp EQUAL   &kp ASTRK      &kp TILDE                                         &kp NON_US_BACKSLASH  &kp UNDERSCORE  &kp HASH               &kp PIPE       &kp PERCENT
+&kp AMPERSAND  &kp SQT            &kp DOLLAR  &none          &kp GREATER_THAN  &kp LEFT_BRACE       &kp MINUS  &kp CARET             &none           &kp LEFT_PARENTHESIS   &kp LESS_THAN  &none
+&kp SLASH      &kp EXCLAMATION    &kp COLON   &kp SEMICOLON  &kp GRAVE         &kp RIGHT_BRACE      &kp PLUS   &kp NON_US_BACKSLASH  &kp AT_SIGN     &kp RIGHT_PARENTHESIS  &none          &kp PRINTSCREEN
+&trans         &trans             &trans      &trans         &trans            &trans               &trans     &trans                                                                      &kp F12
             >;
         };
 
