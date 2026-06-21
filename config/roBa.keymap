@@ -80,10 +80,10 @@
 
         ARROWS {
             bindings = <
-&kp LS(LC(LEFT))  &kp LS(LC(UP))  &kp LS(LC(DOWN))  &kp LS(LC(RIGHT))  &kp                              &kp  &kp           &kp            &kp            &kp
-&kp LC(LEFT)      &kp LC(UP)      &kp LC(DOWN)      &kp LC(RIGHT)      &kp LG(LS(LEFT))   &kp      &kp  &kp  &mkp LCLK     &kp            &mkp RCLK      &mkp MCLK
-&kp LC(LG(LEFT))  &kp LA(LEFT)    &kp LA(RIGHT)     &kp LC(LG(RIGHT))  &kp LG(LS(RIGHT))  &kp      &kp  &kp  &kp LC(HOME)  &kp LC(PG_UP)  &kp LC(PG_DN)  &kp LC(END)
-&kp               &kp             &kp               &kp                &kp                &kp      &kp  &kp                                              &kp
+&kp LS(LC(LEFT))  &kp LS(LC(UP))  &kp LS(LC(DOWN))  &kp LS(LC(RIGHT))  &trans                                 &trans  &trans        &trans         &trans         &trans
+&kp LC(LEFT)      &kp LC(UP)      &kp LC(DOWN)      &kp LC(RIGHT)      &kp LG(LS(LEFT))   &trans      &trans  &trans  &mkp LCLK     &trans         &mkp RCLK      &mkp MCLK
+&kp LC(LG(LEFT))  &kp LA(LEFT)    &kp LA(RIGHT)     &kp LC(LG(RIGHT))  &kp LG(LS(RIGHT))  &trans      &trans  &trans  &kp LC(HOME)  &kp LC(PG_UP)  &kp LC(PG_DN)  &kp LC(END)
+&trans            &trans          &trans            &trans             &trans             &trans      &trans  &trans                                              &trans
             >;
         };
 
