@@ -101,6 +101,47 @@
             key-positions = <7 19>;
             layers = <5>;
         };
+
+        C_UP {
+            bindings = <&kp UP>;
+            key-positions = <4 14>;
+            layers = <0>;
+        };
+
+        C_DN {
+            bindings = <&kp DOWN>;
+            key-positions = <14 26>;
+        };
+
+        C_LT {
+            bindings = <&kp LEFT>;
+            key-positions = <13 14>;
+        };
+
+        C_RT {
+            bindings = <&kp RIGHT>;
+            key-positions = <14 15>;
+        };
+
+        C_HM {
+            bindings = <&kp HOME>;
+            key-positions = <16 17>;
+        };
+
+        C_ED {
+            bindings = <&kp END>;
+            key-positions = <17 18>;
+        };
+
+        C_PU {
+            bindings = <&kp PG_UP>;
+            key-positions = <5 17>;
+        };
+
+        C_PD {
+            bindings = <&kp PG_DN>;
+            key-positions = <17 29>;
+        };
     };
 
     macros {
