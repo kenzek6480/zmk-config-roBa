@@ -89,6 +89,18 @@
             key-positions = <7 19>;
             layers = <5>;
         };
+
+        C_DQT {
+            bindings = <&M_DQT>;
+            key-positions = <1 11>;
+            layers = <0>;
+        };
+
+        C_QTE {
+            bindings = <&M_QTE>;
+            key-positions = <11 23>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -154,6 +166,24 @@
             wait-ms = <30>;
             tap-ms = <30>;
         };
+
+        M_DQT: M_DQT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AT &kp AT &kp LEFT>;
+            label = "M_DQT";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        M_QTE: M_QTE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AMPS &kp AMPS &kp LEFT>;
+            label = "M_QTE";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
     };
 
     keymap {
@@ -170,19 +200,19 @@
 
         MARKS {
             bindings = <
-&kp QUESTION   &kp DOUBLE_QUOTES  &kp EQUAL   &kp ASTRK      &kp TILDE                                         &kp NON_US_BACKSLASH  &kp UNDERSCORE  &kp HASH               &kp PIPE       &kp PERCENT
-&kp AMPERSAND  &kp SQT            &kp DOLLAR  &none          &kp GREATER_THAN  &kp LEFT_BRACE       &kp MINUS  &kp CARET             &none           &kp LEFT_PARENTHESIS   &kp LESS_THAN  &none
-&kp SLASH      &kp EXCLAMATION    &kp COLON   &kp SEMICOLON  &kp GRAVE         &kp RIGHT_BRACE      &kp PLUS   &kp NON_US_BACKSLASH  &kp AT_SIGN     &kp RIGHT_PARENTHESIS  &none          &kp PRINTSCREEN
-&trans         &trans             &trans      &trans         &trans            &trans               &trans     &trans                                                                      &trans
+&kp QMARK  &kp DQT   &kp EQUAL  &kp ASTRK  &kp TILDE                           &kp BSLH   &kp UNDER  &kp HASH  &kp PIPE  &kp PRCNT
+&kp AMPS   &kp SQT   &kp DLLR   &none      &kp GT     &kp LBRC      &kp MINUS  &kp CARET  &none      &kp LPAR  &kp LT    &none
+&kp FSLH   &kp EXCL  &kp COLON  &kp SEMI   &kp GRAVE  &kp RBRC      &kp PLUS   &kp BSLH   &kp AT     &kp RPAR  &none     &kp PSCRN
+&trans     &trans    &trans     &trans     &trans     &trans        &trans     &trans                                    &trans
             >;
         };
 
         NUMS {
             bindings = <
-&kp F1    &kp F2        &kp F3    &kp F4     &kp F5                                                 &kp F6   &kp F7    &kp F8     &kp F9     &kp F10
-&kp N1    &kp N2        &kp N3    &kp N4     &kp N5   &kp LEFT_PARENTHESIS       &kp LEFT_BRACKET   &kp N6   &kp N7    &kp N8     &kp N9     &kp N0
-&kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &kp F11  &kp RIGHT_PARENTHESIS      &kp RIGHT_BRACKET  &kp F12  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-&trans    &trans        &trans    &trans     &trans   &trans                     &trans             &trans                                   &kp INS
+&kp F1    &kp F2  &kp F3    &kp F4     &kp F5                           &kp F6   &kp F7    &kp F8     &kp F9     &kp F10
+&kp N1    &kp N2  &kp N3    &kp N4     &kp N5   &kp LPAR      &kp LBKT  &kp N6   &kp N7    &kp N8     &kp N9     &kp N0
+&kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &kp F11  &kp RPAR      &kp RBKT  &kp F12  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+&trans    &trans  &trans    &trans     &trans   &trans        &trans    &trans                                   &kp INS
             >;
         };
 
