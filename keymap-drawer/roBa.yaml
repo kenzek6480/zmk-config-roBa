@@ -63,7 +63,7 @@ layers:
   - '{'
   - '-'
   - ^
-  - ''
+  - {type: held}
   - (
   - <
   - ''
@@ -78,7 +78,7 @@ layers:
   - '@'
   - )
   - ''
-  - PRINTSCREEN
+  - PSCRN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -112,14 +112,14 @@ layers:
   - '9'
   - '0'
   - LEFT
-  - UP ARROW
+  - UP
   - DOWN
   - {t: RIGHT, type: held}
   - F11
   - )
   - ']'
   - F12
-  - HOME
+  - {t: HOME, type: held}
   - PG UP
   - PG DN
   - END
@@ -152,7 +152,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp LCLK'
-  - {t: ▽, type: trans}
+  - {t: ▽, type: trans held} 
   - '&mkp RCLK'
   - '&mkp MCLK'
   - Ctl+Gui+LEFT
@@ -310,32 +310,62 @@ layers:
   - BT CLR ALL
 combos:
 - p: [18, 19]
-  k: '&mkp LCLK'
-  l: [default, NUMS, MARKS, ARROWS, SCROLL]
+  k: 'LCLK'
+  l: [default, MARKS, NUMS, ARROWS, SCROLL]
 - p: [19, 20]
-  k: '&mkp RCLK'
+  k: 'RCLK'
   l: [default, MARKS, NUMS, ARROWS, SCROLL]
 - p: [20, 21]
-  k: '&mkp MCLK'
+  k: 'MCLK'
   l: [default, MARKS, NUMS, ARROWS, SCROLL]
 - p: [19, 31]
-  k: '&M_PRT'
+  k: '()'
   l: [default]
 - p: [15, 27]
-  k: '&M_BRC'
+  k: '{}'
   l: [default]
 - p: [16, 28]
-  k: '&M_BCT'
+  k: '[]'
+  l: [default]
+- p: [1, 11]
+  k: '""'
   l: [default]
 - p: [11, 23]
-  k: '&M_SELECT'
+  k: ''''''
+  l: [default]
+- p: [11, 23]
+  k: 'SEL'
   l: [SCROLL]
 - p: [12, 24]
-  k: '&M_DELETE'
+  k: 'DEL'
   l: [SCROLL]
 - p: [6, 18]
-  k: '&M_UPDATE'
+  k: 'UPD'
   l: [SCROLL]
 - p: [7, 19]
-  k: '&M_INSERT'
+  k: 'INS'
   l: [SCROLL]
+- p: [4, 14]
+  k: UP
+  l: [default]
+- p: [14, 26]
+  k: DOWN
+  l: [default]
+- p: [13, 14]
+  k: LEFT
+  l: [default]
+- p: [14, 15]
+  k: RIGHT
+  l: [default]
+- p: [16, 17]
+  k: HOME
+  l: [default]
+- p: [17, 18]
+  k: END
+  l: [default]
+- p: [5, 17]
+  k: PG UP
+  l: [default]
+- p: [17, 29]
+  k: PG DN
+  l: [default]
