@@ -16,8 +16,8 @@ layers:
   - {t: D, h: ARROWS}
   - {t: F, h: MARKS}
   - G
-  - {t: TAB, h: Gui+LEFT SHIFT}
-  - {t: '@', h: Sft+LEFT ALT}
+  - {t: TAB, h: Gui+SHIFT}
+  - {t: '@', h: Sft+ALT}
   - H
   - {t: J, h: MARKS}
   - {t: K, h: ARROWS}
@@ -28,8 +28,8 @@ layers:
   - C
   - {t: V, h: NUMS}
   - B
-  - {t: ^, h: Sft+LCTRL}
-  - {t: '-', h: Ctl+LEFT ALT}
+  - {t: ^, h: Sft+CTRL}
+  - {t: '-', h: Ctl+ALT}
   - N
   - {t: M, h: NUMS}
   - ','
@@ -40,9 +40,9 @@ layers:
   - LEFT GUI
   - LEFT SHIFT
   - {t: SPACE, h: LCTRL}
-  - {t: LEFT ALT, h: DEL}
+  - {t: ALT, h: DEL}
   - BACKSPACE
-  - {t: ENTER, h: RCTRL}
+  - {t: ENTER, h: CTRL}
   - {t: LANG2, h: SCROLL}
   MARKS:
   - '?'
@@ -151,10 +151,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
+  - 'LCLK'
   - {t: ▽, type: trans held} 
-  - '&mkp RCLK'
-  - '&mkp MCLK'
+  - 'RCLK'
+  - 'MCLK'
   - Ctl+Gui+LEFT
   - Alt+LEFT
   - Alt+RIGHT
@@ -243,10 +243,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
+  - 'MOVE_LEFT'
+  - 'MOVE_UP'
+  - 'MOVE_DOWN'
+  - 'MOVE_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -345,27 +345,33 @@ combos:
 - p: [7, 19]
   k: 'INS'
   l: [SCROLL]
-- p: [4, 14]
+- p: [17, 5]
   k: UP
   l: [default]
-- p: [14, 26]
+- p: [17, 29]
   k: DOWN
   l: [default]
-- p: [13, 14]
+- p: [17, 16]
   k: LEFT
   l: [default]
-- p: [14, 15]
+- p: [17, 18]
   k: RIGHT
   l: [default]
-- p: [16, 17]
+- p: [14, 13]
   k: HOME
   l: [default]
-- p: [17, 18]
+- p: [14, 15]
   k: END
   l: [default]
-- p: [5, 17]
+- p: [14, 4]
   k: PG UP
   l: [default]
-- p: [17, 29]
+- p: [14, 26]
   k: PG DN
+  l: [default]
+- p: [6, 18]
+  k: 'SCRL_UP'
+  l: [default]
+- p: [18, 30]
+  k: 'SCRL_DOWN'
   l: [default]
