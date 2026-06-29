@@ -151,13 +151,13 @@
         };
 
         C_US {
-            bindings = <&mmv MOVE_UP>;
+            bindings = <&mmv MOVE_Y(-100)>;
             key-positions = <6 18>;
             layers = <0>;
         };
 
         C_DS {
-            bindings = <&mmv MOVE_DOWN>;
+            bindings = <&mmv MOVE_Y(100)>;
             key-positions = <18 30>;
             layers = <0>;
         };
