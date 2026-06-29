@@ -104,49 +104,61 @@
 
         C_UP {
             bindings = <&kp UP>;
-            key-positions = <4 14>;
+            key-positions = <17 5>;
             layers = <0>;
         };
 
         C_DN {
             bindings = <&kp DOWN>;
-            key-positions = <14 26>;
+            key-positions = <17 29>;
             layers = <0>;
         };
 
         C_LT {
             bindings = <&kp LEFT>;
-            key-positions = <13 14>;
+            key-positions = <17 16>;
             layers = <0>;
         };
 
         C_RT {
             bindings = <&kp RIGHT>;
-            key-positions = <14 15>;
+            key-positions = <17 18>;
             layers = <0>;
         };
 
         C_HM {
             bindings = <&kp HOME>;
-            key-positions = <16 17>;
+            key-positions = <14 13>;
             layers = <0>;
         };
 
         C_ED {
             bindings = <&kp END>;
-            key-positions = <17 18>;
+            key-positions = <14 15>;
             layers = <0>;
         };
 
         C_PU {
             bindings = <&kp PG_UP>;
-            key-positions = <5 17>;
+            key-positions = <14 4>;
             layers = <0>;
         };
 
         C_PD {
             bindings = <&kp PG_DN>;
-            key-positions = <17 29>;
+            key-positions = <14 26>;
+            layers = <0>;
+        };
+
+        C_US {
+            bindings = <&mmv MOVE_UP>;
+            key-positions = <6 18>;
+            layers = <0>;
+        };
+
+        C_DS {
+            bindings = <&mmv MOVE_DOWN>;
+            key-positions = <18 30>;
             layers = <0>;
         };
     };
